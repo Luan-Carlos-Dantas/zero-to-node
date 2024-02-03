@@ -1,0 +1,25 @@
+POST http://localhost:8000/videos
+Content-Type: application/json
+Accept-Language: pt
+
+###
+GET  http://localhost:8000/videos
+###
+
+PUT http://localhost:8000/videos/b1327865-63d1-4b55-9a1f-b8a259490cc1
+Content-Type: application/json
+
+{
+  "title": "Video Atualizado",
+  "description": "Video atualizado",
+  "duration": 180
+}
+
+###
+GET  http://localhost:8000/videos
+###
+
+DELETE  http://localhost:8000/videos/b1327865-63d1-4b55-9a1f-b8a259490cc1
+###
+GET  http://localhost:8000/videos?search=caminhada
+###
